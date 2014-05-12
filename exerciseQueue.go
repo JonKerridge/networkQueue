@@ -55,8 +55,7 @@ func main() {
 	fmt.Printf("Concurrent and Parallel Systems in GO\n")
 	fmt.Printf("Jon Kerridge Edinburgh Napier Univerity\n")
 	fmt.Printf("email : j dot kerridge at napier.ac.uk\n")
-	fmt.Printf(" blog : http://jonkerridge-goparallel.blogspot.co.uk/\n")
-	fmt.Printf(" code : https://bitbucket.org/jkerridge/gows\n\n\n")
+	fmt.Printf(" code : https://github.com/JonKerridge\n\n\n")
 
 	fmt.Printf("A Network that Manipulates a Circular Queue\n")
 
@@ -76,14 +75,4 @@ func main() {
 		i = i + 1
 	}
 	fmt.Printf("Finished Queue Processing\n")
-	oute := make(chan int)
-	go pnp.Example1(oute)
-	var ei int = 0
-	var ev int = 0
-	for ei < 10 {
-		ev = <-oute
-		fmt.Printf("\t%v\n", ev)
-		ei = ei + 1
-	}
-	fmt.Printf("Finished Example Processing\n")
 }
